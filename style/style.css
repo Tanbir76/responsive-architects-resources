@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+	 font-family: "Work Sans"
+}
+/* banner-style-here  */
+.banner{
+	max-width: 1920px;
+	margin: 0 auto;
+	background-color: rgba(255, 143, 14, 0.164);
+	border: 2px solid red;
+}
+.nav-title{
+	font-weight: bold;
+	font-size: 2.5rem;
+
+}
+.nav-container{
+	max-width: 1440px;
+justify-content: space-between;
+align-items: center;
+margin: 0 auto;
+}
+.li-items ul{
+	list-style:  none;
+
+}
+.li-items li{
+	margin-right: 30px;
+}
+.anchor-style{
+text-decoration: none;
+font-size: 1.25rem;
+font-weight:500; 
+color: rgba(66, 66, 66, 1);
+
+}
+.banner-container{
+	text-align: center;
+	max-width: 1440px;
+	margin: 0 auto;
+
+}
+.banner-content{
+	margin-bottom: 3rem;
+}
+.banner-content h1{
+	font-size: 4rem;
+	font-weight: bold;
+}
+.banner-content p{
+	font-size: 1rem;
+	font-weight: 400;
+	margin-bottom: 2rem;
+}
+
+.banner-image img{
+	width: 100%;
+	height: 100%;
+}
+
+/* everyone-style */
+.display-flex{
+	display: flex;
+}
+/* dark-1  */
+.primary-color{
+	color: rgba(19, 19, 19, 1);
+}
+/* dark-2  */
+.secondary-color{
+	color:rgba(66, 66, 66, 1);
+}
+/* dark-3  */
+.tertiary-color{
+	color: rgba(114, 114, 114, 1);
+}
+.btn-primary{
+	background-color: #FF900E;
+width: 180px;height: 64px;
+color: white;
+font-size: 1.25rem;
+font-weight: 600;
+border: none;
+border-radius: 8px;
+}
+/* small-device-style  */
+@media screen and (max-width: 576px) {
+	/* .nav-container, #li-content { */
+	.nav-container, .li-content{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		
+	}
+	.li-content {
+		gap: 20px;
+	}
+	
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+	.display-flex{
+		flex-direction: column;
+	}
+	.li-content{
+		flex-direction: row;
+	}
+}
